@@ -499,7 +499,7 @@ declare namespace Chart {
     interface LogarithmicTickOptions extends TickOptions {
     }
 
-    type ChartColor = string | CanvasGradient | CanvasPattern | string[];
+    type ChartColor = string | CanvasGradient | CanvasPattern | string[] | ((context: any) => string);
 
     interface ChartDataSets {
         cubicInterpolationMode?: 'default' | 'monotone';
